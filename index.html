@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balena - Toko Sepatu Basket</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">BALENA</div>
+        <div class="nav-menu">
+          <a href="index.html">Home</a>
+          <a href="produk.html">Produk</a>
+          <a href="#" id="akun-link">Akun</a>
+          <a href="keranjang.html" id="keranjang-link">Keranjang</a>
+          <a href="#" id="auth-link">Login</a>
+        </div>
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Cari sepatu..." />
+          <button id="search-btn">🔍</button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <div class="hero-section">
+        <h1>Selamat Datang di Balena</h1>
+        <p>Temukan Sepatu basket terbaik untuk performa maksimal</p>
+        <button class="cta-button" onclick="window.location.href='produk.html'">
+          Belanja Sekarang
+        </button>
+      </div>
+    </main>
+
+    <!-- Modal Login -->
+    <div id="login-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <input
+            type="text"
+            id="login-username"
+            placeholder="Masukkan Username"
+            required
+          />
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Masukkan Password"
+            required
+          />
+          <button type="submit">Login</button>
+        </form>
+        <p><a href="#" id="to-signin">Kembali ke Sign In</a></p>
+        <p><a href="#" id="masuk-tanpa-akun">Masuk tanpa akun</a></p>
+      </div>
+    </div>
+
+    <!-- Modal Sign In -->
+    <div id="signin-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign In</h2>
+        <form id="signin-form">
+          <input
+            type="text"
+            id="signin-username"
+            placeholder="Buat Username"
+            required
+          />
+          <input
+            type="password"
+            id="signin-password"
+            placeholder="Buat Password"
+            required
+          />
+          <button type="submit">Sign In</button>
+        </form>
+        <p><a href="#" id="sudah-punya-akun">Sudah punya akun? Login</a></p>
+        <p><a href="#" id="masuk-tanpa-akun-signin">Masuk tanpa akun</a></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
