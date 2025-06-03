@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Balena</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">BALENA</div>
+        <div class="nav-menu">
+          <a href="index.html">Home</a>
+          <a href="produk.html">Produk</a>
+          <a href="#" id="akun-link">Akun</a>
+          <a href="keranjang.html" id="keranjang-link">Keranjang</a>
+          <a href="#" id="auth-link">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <div class="checkout-container">
+        <div class="checkout-section">
+          <h2>INFORMASI AKUN</h2>
+          <form id="account-form">
+            <label>Nama Lengkap:</label>
+            <input type="text" required />
+
+            <label>Email:</label>
+            <input type="email" required />
+
+            <label>Alamat Pengiriman:</label>
+            <textarea required></textarea>
+
+            <button type="submit" class="submit-btn">Simpan Informasi</button>
+          </form>
+        </div>
+
+        <div class="checkout-section">
+          <h2>RIWAYAT PEMESANAN</h2>
+          <div class="order-history">
+            <p>Belum ada riwayat pemesanan</p>
+          </div>
+        </div>
+
+        <div class="checkout-section">
+          <h2>CHECKOUT</h2>
+          <div class="cart-summary" id="checkout-summary">
+            <p>Keranjang Belanja:</p>
+            <div id="checkout-items"></div>
+            <div class="total-checkout">
+              <strong>Total: Rp <span id="checkout-total">0</span></strong>
+            </div>
+            <button class="pay-btn">Bayar</button>
+          </div>
+        </div>
+
+        <div class="checkout-section">
+          <h2>DESKRIPSI</h2>
+          <p>Pesanan Untuk Sehari:</p>
+          <p>
+            Dapatkan sepatu basket terbaik dengan kualitas premium dan harga
+            terjangkau. Pengiriman cepat dan aman ke seluruh Indonesia.
+          </p>
+          <button class="info-btn">Info</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
