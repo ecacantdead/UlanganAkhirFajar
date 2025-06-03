@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk - Balena</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">BALENA</div>
+        <div class="nav-menu">
+          <a href="index.html">Home</a>
+          <a href="produk.html">Produk</a>
+          <a href="#" id="akun-link">Akun</a>
+          <a href="keranjang.html" id="keranjang-link">Keranjang</a>
+          <a href="#" id="auth-link">Login</a>
+        </div>
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Cari sepatu..." />
+          <button id="search-btn">🔍</button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <div class="products-header">
+        <h1>KOLEKSI SEPATU BASKET</h1>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">
+            Semua Kategori
+          </button>
+          <button class="filter-btn" data-filter="jordan">Jordan</button>
+          <button class="filter-btn" data-filter="nike">Nike</button>
+        </div>
+      </div>
+
+      <div class="products-grid" id="products-grid">
+        <div class="product-card" data-category="nike">
+          <img
+            src="/placeholder.svg?height=200&width=200"
+            alt="Air Max Impact 4"
+          />
+          <h3>AIR MAX IMPACT 4</h3>
+          <p>
+            Sepatu basket dengan teknologi Air Max untuk kenyamanan maksimal
+          </p>
+          <div class="price">Rp 1.299.000</div>
+          <button
+            class="add-to-cart"
+            data-product="Air Max Impact 4"
+            data-price="1299000"
+          >
+            Tambah ke keranjang
+          </button>
+        </div>
+
+        <div class="product-card" data-category="nike">
+          <img
+            src="/placeholder.svg?height=200&width=200"
+            alt="Air Max Impact 4"
+          />
+          <h3>AIR MAX IMPACT 4</h3>
+          <p>Desain modern dengan performa tinggi untuk pemain serius</p>
+          <div class="price">Rp 1.399.000</div>
+          <button
+            class="add-to-cart"
+            data-product="Air Max Impact 4 Pro"
+            data-price="1399000"
+          >
+            Tambah ke keranjang
+          </button>
+        </div>
+
+        <div class="product-card" data-category="jordan">
+          <img
+            src="/placeholder.svg?height=200&width=200"
+            alt="Jordan One Take 4"
+          />
+          <h3>JORDAN ONE TAKE 4</h3>
+          <p>Sepatu basket Jordan dengan teknologi terdepan</p>
+          <div class="price">Rp 1.599.000</div>
+          <button
+            class="add-to-cart"
+            data-product="Jordan One Take 4"
+            data-price="1599000"
+          >
+            Tambah ke keranjang
+          </button>
+        </div>
+
+        <div class="product-card" data-category="nike">
+          <img
+            src="/placeholder.svg?height=200&width=200"
+            alt="Air Max Impact 4"
+          />
+          <h3>AIR MAX IMPACT 4</h3>
+          <p>Kombinasi sempurna antara gaya dan performa</p>
+          <div class="price">Rp 1.199.000</div>
+          <button
+            class="add-to-cart"
+            data-product="Air Max Impact 4 Style"
+            data-price="1199000"
+          >
+            Tambah ke keranjang
+          </button>
+        </div>
+
+        <div class="product-card" data-category="nike">
+          <img
+            src="/placeholder.svg?height=200&width=200"
+            alt="Air Max Impact 4"
+          />
+          <h3>AIR MAX IMPACT 4</h3>
+          <p>Warna earth tone yang elegan untuk gaya kasual</p>
+          <div class="price">Rp 1.399.000</div>
+          <button
+            class="add-to-cart"
+            data-product="Air Max Impact 4 Earth"
+            data-price="1399000"
+          >
+            Tambah ke keranjang
+          </button>
+        </div>
+
+        <div class="product-card" data-category="nike">
+          <img
+            src="/placeholder.svg?height=200&width=200"
+            alt="Air Max Impact 4"
+          />
+          <h3>AIR MAX IMPACT 4</h3>
+          <p>Warna mint fresh yang menyegarkan untuk tampil beda</p>
+          <div class="price">Rp 1.499.000</div>
+          <button
+            class="add-to-cart"
+            data-product="Air Max Impact 4 Mint"
+            data-price="1499000"
+          >
+            Tambah ke keranjang
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal Login -->
+    <div id="login-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <input
+            type="text"
+            id="login-username"
+            placeholder="Buat Username"
+            required
+          />
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Buat Password"
+            required
+          />
+          <button type="submit">Login</button>
+        </form>
+        <p><a href="#" id="to-signin">Kembali ke Sign In</a></p>
+        <p><a href="#" id="masuk-tanpa-akun">Masuk tanpa akun</a></p>
+      </div>
+    </div>
+
+    <!-- Modal Sign In -->
+    <div id="signin-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign In</h2>
+        <form id="signin-form">
+          <input
+            type="text"
+            id="signin-username"
+            placeholder="Buat Username"
+            required
+          />
+          <input
+            type="password"
+            id="signin-password"
+            placeholder="Buat Password"
+            required
+          />
+          <button type="submit">Sign In</button>
+        </form>
+        <p><a href="#" id="sudah-punya-akun">Sudah punya akun? Login</a></p>
+        <p><a href="#" id="masuk-tanpa-akun-signin">Masuk tanpa akun</a></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
