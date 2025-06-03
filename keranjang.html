@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keranjang - Balena</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">BALENA</div>
+        <div class="nav-menu">
+          <a href="index.html">Home</a>
+          <a href="produk.html">Produk</a>
+          <a href="#" id="akun-link">Akun</a>
+          <a href="keranjang.html" id="keranjang-link">Keranjang</a>
+          <a href="#" id="auth-link">Login</a>
+        </div>
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Cari sepatu..." />
+          <button id="search-btn">🔍</button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <h1>Keranjang Belanja</h1>
+
+      <div class="cart-container" id="cart-container">
+        <div class="empty-cart" id="empty-cart">
+          <p>Keranjang Anda kosong</p>
+          <button onclick="window.location.href='produk.html'">
+            Mulai Belanja
+          </button>
+        </div>
+      </div>
+
+      <div class="cart-total" id="cart-total" style="display: none">
+        <div class="total-section">
+          <h3>Total: Rp <span id="total-amount">0</span></h3>
+          <button
+            class="checkout-btn"
+            onclick="window.location.href='checkout.html'"
+          >
+            Lanjut ke Checkout
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
